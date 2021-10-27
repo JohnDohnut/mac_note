@@ -1,0 +1,22 @@
+현상 : mac의 bash terminal에서 pip3는 정상작동하나, pip의 경우 -bash : pip : command not found가 나오는 현상
+
+env : MacBook Air (M1,2020), Big Sur 11.5.2, bash shell
+
+예측한 해결방안 :
+
+1. pip를 설치하면 된다.
+
+2. pip3는 작동하므로 pip3가 pip를 대체하면 되는것 아닌가? 
+
+
+문제 : pip모듈이 없었음
+
+
+해결,결과 :
+
+https://stackoverflow.com/questions/18363022/importerror-no-module-named-pip
+
+brew로 python 설치 후 
+
+python2.7 -m ensurepip --default-pip 
+
